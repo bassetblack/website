@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+       
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <title>Responsive Website Travel</title>
+        <style>
+            /* Additional CSS for the custom language switcher */
+            #languageSwitcher {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .languageOption img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+ 
+  
+        </style>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Travel</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link"data-translate="home">Home</a>
+                        </li>
+                      
+                      
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link" data-translate="places">Places</a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="#Gallery" class="nav__link" data-translate="gallery">Gallery</a>
+                      </li>
+                      <li class="nav__item">
+                        <a href="#about" class="nav__link"data-translate="about">About</a>
+                    </li>
+                     
+                    <li id="languageSwitcher" class="languageOption" data-language="en">
+                        <img src="https://cdn.parcellab.com/img/flags/us.png" alt="English">
+                        English
+                    </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                    
+                        <span class="change-theme-name" data-translate="darkMode">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+           
+            </nav>
+        </header>
+
+        <main class="main">
+          
+            <section class="home" id="home">
+                <video src="assets/video/video.mp4" autoplay muted loop class="home__img"></video>
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle" data-translate="discoverYourPlace">Discover your place</span>
+                        <h1 class="home__data-title" data-translate="exploreTheBest">Explore The <br> Best <b>Beautiful <br> Beaches</b></h1>
+                        <a href="#" class="button" data-translate="explore">Explore</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="placesection" id="place">
+                <h2 class="section__title" data-translate="chooseYourPlace">Choose Your Place</h2>
+                <div class="wrapper3">
+                    <div class="card3">
+                        <img src="assets/img/discover1.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Alps Mountains</h1>
+                            <p data-translate="card1">Experience the majestic beauty of the Alps with breathtaking views and adventurous hiking trails.</p>
+                            <a style="transform: scale(0.8);" href="index1.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/discover2.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Pacific Coast Highway</h1>
+                            <p data-translate="card2">Drive along the scenic Pacific Coast Highway, with stunning ocean views and charming seaside towns.</p>
+                            <a style="transform: scale(0.8);" href="index2.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/discover3.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Times Square</h1>
+                            <p data-translate="card3">Visit the bustling heart of New York City, filled with bright lights, entertainment, and shopping.</p>
+                            <a style="transform: scale(0.8);" href="index3.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/discover4.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Maldives Beach</h1>
+                            <p data-translate="card4">Relax on the pristine beaches of the Maldives, with crystal clear waters and luxurious resorts.</p>
+                            <a style="transform: scale(0.8);" href="index4.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/place1.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Tokyo City</h1>
+                            <p data-translate="card5">Discover the vibrant culture and modern marvels of Tokyo, a city that never sleeps.</p>
+                            <a style="transform: scale(0.8);" href="index5.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/place2.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Amazon Rainforest</h1>
+                            <p data-translate="card6">Explore the dense and diverse Amazon Rainforest, home to countless species of wildlife and plants.</p>
+                            <a style="transform: scale(0.8);" href="index6.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/place3.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Black Forest</h1>
+                            <p data-translate="card7">Wander through the enchanting Black Forest, known for its dense woods and picturesque villages.</p>
+                            <a style="transform: scale(0.8);" href="index7.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="assets/img/place4.jpg"/>
+                        <div class="info">
+                            <h1 style="color: white;">Sherwood Forest</h1>
+                            <p data-translate="card8">Step into the legendary Sherwood Forest, famous for its association with Robin Hood and medieval folklore.</p>
+                            <a style="transform: scale(0.8);" href="index8.html" class="button" data-translate="explore">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section" id="Gallery">
+                <h2 class="section__title" data-translate="gallery">Gallery</h2>
+                <div class="container1">
+                    <a href="assets/img/rodrigo-kugnharski-pdWc5wm1STw-unsplash-640x363.jpg" data-fancybox="gallery">
+                        <img class="photo" src="assets/img/rodrigo-kugnharski-pdWc5wm1STw-unsplash-640x363.jpg" alt="Herd of horses">
+                    </a>
+                    <a href="assets/img/download (1).jpeg" data-fancybox="gallery">
+                        <img class="photo" src="assets/img/download (1).jpeg" alt="Baby Elephant">
+                    </a>
+                    <a href="assets/img/download.jpeg" data-fancybox="gallery">
+                        <img class="photo" src="assets/img/download.jpeg" alt="Koi Fish">
+                    </a>
+                    <a href="assets/img/download (2).jpeg" data-fancybox="gallery">
+                        <img class="photo" src="assets/img/download (2).jpeg" alt="Ibis Bird">
+                    </a>
+                    <a href="assets/img/images.jpeg" data-fancybox="gallery">
+                        <img class="photo" src="assets/img/images.jpeg" alt="Lemur">
+                    </a>
+                    <a href="assets/img/shutterstock_1463319173_1024x1024.webp" data-fancybox="gallery">
+                        <img class="photo" src="assets/img/shutterstock_1463319173_1024x1024.webp" alt="Berber Monkeys">
+                    </a>
+                    <a href="assets/video/video.mp4" data-fancybox="gallery" data-type="video">
+                        <img class="photo" src="assets/img/experience2.jpg" alt="Video Thumbnail">
+                    </a>
+                    
+                </div>
+            </section>
+              
+              
+            <section class="about section" id="about">
+                <div class="about__container container grid" >
+                    <div class="about__data">
+                        <h2 class="section__title about__title" data-translate="moreInfo">More Information <br> About The Best Beaches</h2>
+                        <p class="about__description" data-translate="description">You can find the most beautiful and pleasant places at the best 
+                            prices with special discounts, you choose the place we will guide you all the way to wait, get your 
+                            place now.
+                        </p>
+                        <a href="#" class="button" data-translate="reserve">Reserve a place</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2" id="contact">
+                <h2 class="section__title" data-translate="contactUs">Contact Us</h2>
+                <div class="contact__container">
+                  <div class="contact__column">
+                    <h3>Email</h3>
+                    <p>example@example.com</p>
+                  </div>
+                  <div class="contact__column">
+                    <h3 data-translate="phone">Phone Number</h3>
+                    <p>+123 456 7890</p>
+                  </div>
+                  <div class="contact__column">
+                    <h3 data-translate="address">Address</h3>
+                    <p>123 Beach Avenue, Sunnyville, CA 12345</p>
+                  </div>
+                </div>
+              </section>
+            <section class="section2">
+              <h2 class="section__title" data-translate="whereToFindUs">Where To Find Us</h2>
+              <div class="container2">
+                  <div class="map-responsive-container">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102076.43948497674!2d7.66261533472848!3d36.91692462703936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f007009aede68f%3A0x49614edffa040cb1!2sAnnaba!5e0!3m2!1sen!2sdz!4v1719042884530!5m2!1sen!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+          </section>
+          
+  
+          
+        </main>
+
+       
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description" data-translate="travel">Travel you choose the <br> destination, 
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle" data-translate="about">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="aboutUs">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="features">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="blog">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle" data-translate="company">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="team">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="pricing" >Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="member">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="faqs">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="supportCenter">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="contactUs">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        
+        <script src="assets/js/scrollreveal.min.js"></script>
+  
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+        <script>
+            const translations = {
+                en: {
+                    home: "Home",
+                    about: "About",
+                    discover: "Discover",
+                    places: "Places",
+                    gallery: "Gallery",
+                    darkMode: "Dark mode",
+                    discoverYourPlace: "Discover your place",
+                    exploreTheBest: "Explore The <br> Best <b>Beautiful <br> Beaches</b>",
+                    explore: "Explore",
+                    mostAttractivePlaces: "Discover the most <br> attractive places",
+                    chooseYourPlace: "Choose Your Place",
+                    moreInfo: "More Information <br> About The Best Beaches",
+                    description: "You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.",
+                    reserve: "Reserve a place",
+                    company: "Company",
+                    whereToFindUs: "Where To Find Us",
+                    aboutUs: "About Us",
+                    features: "Features",
+                    blog: "New & Blog",
+                    team: "Team",
+                    pricing: "Plan y Pricing",
+                    member: "Become a member",
+                    faqs: "FAQs",
+                    supportCenter: "Support Center",
+                    contactUs: "Contact Us",
+                    travel: "Travel you choose the <br> destination, we offer you the <br> experience.",
+                    card1:"Experience the majestic beauty of the Alps with breathtaking views and adventurous hiking trails.",
+                    card2:"Drive along the scenic Pacific Coast Highway, with stunning ocean views and charming seaside towns.",
+                    card3:"Visit the bustling heart of New York City, filled with bright lights, entertainment, and shopping.",
+                    card4:"Relax on the pristine beaches of the Maldives, with crystal clear waters and luxurious resorts.",
+                    card5:"Discover the vibrant culture and modern marvels of Tokyo, a city that never sleeps.",
+                    card6:"Explore the dense and diverse Amazon Rainforest, home to countless species of wildlife and plants.",
+                    card7:"Wander through the enchanting Black Forest, known for its dense woods and picturesque villages.",
+                    card8:"Step into the legendary Sherwood Forest, famous for its association with Robin Hood and medieval folklore.",
+                    phone:"Phone Number",
+                    address:"adress"
+                },
+                fr: {
+                    home: "Accueil",
+                    about: "À propos",
+                    discover: "Découvrir",
+                    places: "Lieux",
+                    gallery: "Galerie",
+                    darkMode: "Mode sombre",
+                    discoverYourPlace: "Découvrez votre place",
+                    exploreTheBest: "Explorez les <br> Meilleures <b>Belles <br> Plages</b>",
+                    explore: "Explorer",
+                    mostAttractivePlaces: "Découvrez les endroits les plus <br> attractifs",
+                    chooseYourPlace: "Choisissez Votre Lieu",
+                    moreInfo: "Plus d'informations <br> sur les meilleures plages",
+                    description: "Vous pouvez trouver les endroits les plus beaux et agréables aux meilleurs prix avec des réductions spéciales, vous choisissez l'endroit, nous vous guiderons tout au long du chemin pour attendre, obtenez votre place maintenant.",
+                    reserve: "Réserver un endroit",
+                    company: "Entreprise",
+                    whereToFindUs: "Où Nous Trouver",
+                    aboutUs: "À propos de nous",
+                    features: "Caractéristiques",
+                    blog: "Nouveautés & Blog",
+                    team: "Équipe",
+                    pricing: "Plan et Tarification",
+                    member: "Devenir membre",
+                    faqs: "FAQs",
+                    supportCenter: "Centre de support",
+                    contactUs: "Contactez-nous",
+                    travel: "Voyage vous choisissez la <br> destination, nous vous offrons l' <br> expérience.",
+                    card1:"Découvrez la beauté majestueuse des Alpes avec des vues à couper le souffle et des sentiers de randonnée aventureux.",
+                    card2:"Conduisez le long de la pittoresque Pacific Coast Highway, avec de superbes vues sur l'océan et de charmantes villes balnéaires.",
+                    card3:"Visitez le cœur animé de New York, rempli de lumières vives, de divertissements et de boutiques.",
+                    card4:"Détendez-vous sur les plages immaculées des Maldives, aux eaux cristallines et aux complexes hôteliers luxueux.",
+                    card5:"Découvrez la culture vibrante et les merveilles modernes de Tokyo, une ville qui ne dort jamais.",
+                    card6 : "Explorez la forêt amazonienne dense et diversifiée, qui abrite d'innombrables espèces d'animaux sauvages et de plantes.",
+                    card7:"Promenez-vous dans la charmante Forêt-Noire, connue pour ses bois denses et ses villages pittoresques.",
+                    card8 : "Entrez dans la légendaire forêt de Sherwood, célèbre pour son association avec Robin des Bois et le folklore médiéval.",
+                    phone:"Numéro de téléphone",
+                    address:"adresse"
+                }
+            };
+    
+            function setLanguage(language) {
+                document.querySelectorAll("[data-translate]").forEach(el => {
+                    el.innerHTML = translations[language][el.getAttribute("data-translate")];
+                });
+                const languageSwitcher = document.getElementById("languageSwitcher");
+                if (language === "en") {
+                    languageSwitcher.setAttribute("data-language", "fr");
+                    languageSwitcher.innerHTML = '<img src="https://cdn.parcellab.com/img/flags/fr.png" alt="Français"> Français';
+                } else {
+                    languageSwitcher.setAttribute("data-language", "en");
+                    languageSwitcher.innerHTML = '<img src="https://cdn.parcellab.com/img/flags/us.png" alt="English"> English';
+                }
+            }
+    
+            document.getElementById("languageSwitcher").addEventListener("click", (event) => {
+                const currentLanguage = event.currentTarget.getAttribute("data-language");
+                setLanguage(currentLanguage);
+            });
+    
+            document.addEventListener("DOMContentLoaded", () => {
+                setLanguage("en"); 
+            });
+        </script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 'auto',
+              spaceBetween: 30,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            });
+          </script>
+          <script>
+           $(document).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            "slideShow",
+            "thumbs",
+            "zoom",
+            "fullScreen",
+            "share",
+            "close"
+        ],
+        loop: true,
+        protect: true,
+        afterLoad: function(instance, current) {
+            if (current.src.endsWith(".mp4")) {
+                current.type = 'html';
+                current.src = `<video controls style="width: 100%; height: auto;">
+                                 <source src="${current.src}" type="video/mp4">
+                                 Your browser does not support the video tag.
+                               </video>`;
+            }
+        }
+    });
+});
+          </script>
+    </body>
+</html>

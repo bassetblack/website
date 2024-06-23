@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+       
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <title>Responsive Website Travel</title>
+        <style>
+  
+            #languageSwitcher {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .languageOption img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+ 
+  
+        </style>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo1">Travel</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link1 active-link"data-translate="home">Home</a>
+                        </li>
+                      
+                      <li class="nav__item">
+                        <a href="#Gallery" class="nav__link1"data-translate="about">About</a>
+                    </li>
+                     
+                    <li id="languageSwitcher" class="languageOption1" data-language="en">
+                        <img src="https://cdn.parcellab.com/img/flags/us.png" alt="English">
+                        English
+                    </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                    
+                        <span class="change-theme1-name" data-translate="darkMode">Dark mode</span>
+                        <i class="ri-moon-line change-theme1" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle1">
+                    <i class="ri-function-line"></i>
+                </div>
+           
+            </nav>
+        </header>
+
+        <main class="main">
+          
+          
+            <section class="section" id="Gallery" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+                <div class="w3-content w3-display-container">
+                  <a href="assets/img/rodrigo-kugnharski-pdWc5wm1STw-unsplash-640x363.jpg" data-fancybox="gallery">
+                    <img class="mySlides" src="assets/img/rodrigo-kugnharski-pdWc5wm1STw-unsplash-640x363.jpg">
+                  </a>
+                  <a href="assets/img/download (1).jpeg" data-fancybox="gallery">
+                    <img class="mySlides" src="assets/img/download (1).jpeg">
+                  </a>
+                  <a href="assets/img/shutterstock_1463319173_1024x1024.webp" data-fancybox="gallery">
+                    <img class="mySlides" src="assets/img/shutterstock_1463319173_1024x1024.webp">
+                  </a>
+                  <a href="assets/img/download (2).jpeg" data-fancybox="gallery">
+                    <img class="mySlides" src="assets/img/download (2).jpeg">
+                  </a>
+                  <a href="assets/video/video.mp4" data-fancybox="gallery">
+                    <video class="mySlides" controls style="width: 100%; height: 100%;">
+                      <source src="assets/video/video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </a>
+                  <a href="assets/img/home1.jpg" data-fancybox="gallery">
+                    <img class="mySlides" src="assets/img/home1.jpg">
+                  </a>
+                
+                  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <div class="slider-text">This is the text under the slider.</div>
+              </section>
+           
+          
+        </main>
+
+       
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Travel</h3>
+                        <p class="footer__description" data-translate="travel">Travel you choose the <br> destination, 
+                            we offer you the <br> experience.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle" data-translate="about">About</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="aboutUs">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="features">Features</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="blog">New & Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle" data-translate="company">Company</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="team">Team</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="pricing" >Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="member">Become a member</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">Support</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="faqs">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="supportCenter">Support Center</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link" data-translate="contactUs">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        
+        <script src="assets/js/scrollreveal.min.js"></script>
+  
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+        <script>
+           const translations = {
+      en: {
+        home: "Home",
+        about: "About",
+        gallery: "Gallery",
+        darkMode: "Dark mode",
+        travel: "Travel you choose the <br> destination, we offer you the <br> experience.",
+        aboutUs: "About Us",
+        features: "Features",
+        blog: "New & Blog",
+        company: "Company",
+        team: "Team",
+        pricing: "Plan y Pricing",
+        member: "Become a member",
+        faqs: "FAQs",
+        supportCenter: "Support Center",
+        contactUs: "Contact Us",
+        phone: "Phone Number",
+        address: "Address"
+                },
+                fr: {
+                    home: "Accueil",
+                    about: "À propos",
+                    gallery: "Galerie",
+                    darkMode: "Mode sombre",
+                    company: "Entreprise",
+                    aboutUs: "À propos de nous",
+                    features: "Caractéristiques",
+                    blog: "Nouveautés & Blog",
+                    team: "Équipe",
+                    pricing: "Plan et Tarification",
+                    member: "Devenir membre",
+                    faqs: "FAQs",
+                    supportCenter: "Centre de support",
+                    contactUs: "Contactez-nous",
+                    travel: "Voyage vous choisissez la <br> destination, nous vous offrons l'expérience.",
+                    phone:"Numéro de téléphone",
+                    address:"adresse"
+                }
+            };
+    
+            function setLanguage(language) {
+                document.querySelectorAll("[data-translate]").forEach(el => {
+                    el.innerHTML = translations[language][el.getAttribute("data-translate")];
+                });
+                const languageSwitcher = document.getElementById("languageSwitcher");
+                if (language === "en") {
+                    languageSwitcher.setAttribute("data-language", "fr");
+                    languageSwitcher.innerHTML = '<img src="https://cdn.parcellab.com/img/flags/fr.png" alt="Français"> Français';
+                } else {
+                    languageSwitcher.setAttribute("data-language", "en");
+                    languageSwitcher.innerHTML = '<img src="https://cdn.parcellab.com/img/flags/us.png" alt="English"> English';
+                }
+            }
+    
+            document.getElementById("languageSwitcher").addEventListener("click", (event) => {
+                const currentLanguage = event.currentTarget.getAttribute("data-language");
+                setLanguage(currentLanguage);
+            });
+    
+            document.addEventListener("DOMContentLoaded", () => {
+                setLanguage("en"); 
+            });
+        </script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              slidesPerView: 'auto',
+              spaceBetween: 30,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            });
+          </script>
+     <script>
+         var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    $(document).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            "slideShow",
+            "thumbs",
+            "zoom",
+            "fullScreen",
+            "share",
+            "close"
+        ],
+        loop: true,
+        protect: true,
+        afterLoad: function(instance, current) {
+            if (current.src.endsWith(".mp4")) {
+                current.type = 'html';
+                current.src = `<video controls style="width: 100%; height: auto;">
+                                 <source src="${current.src}" type="video/mp4">
+                                 Your browser does not support the video tag.
+                               </video>`;
+            }
+        }
+    });
+});
+      </script>
+    </body>
+</html>
